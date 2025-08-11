@@ -22,6 +22,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use("/api/auth", require("./app/routes/authRoutes"));
 app.use("/api/users", require("./app/routes/userRoutes"));
 app.use("/api/categories", require("./app/routes/categoryRoutes"));
+app.use("/api/blogs", require("./app/routes/postRoutes"));
 
 // Server listen
 const port = process.env.PORT || 2809;
